@@ -1,0 +1,10 @@
+
+#rewrite mode on and make sure your under apache2/httpd.conf
+# Search Directory and inside Directory property make sure you there is AllowOverride All
+RewriteEngine On
+
+#set landing page
+DirectoryIndex rentmy.php
+
+#set seo friendly url
+RewriteRule ^page/([a-zA-Z0-9-/]+)$ rentmy.php?page=$1 [QSA,L]

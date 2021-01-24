@@ -1,0 +1,5131 @@
+// color variable
+$themecolor: #e64a31;
+$themehovercolor: #FDB71C;
+$buttoncolor: #e64a31;
+$buttonhovercolor: #FDB71C;
+// font variable 
+$fontfamily: 'Work Sans',
+sans-serif;
+// global css 
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+body {
+    &.rentmy-main-wrapper {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        font-family: $fontfamily;
+    }
+}
+
+.rentmy-main-wrapper {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $fontfamily;
+        margin: 0;
+        padding: 0;
+        line-height: 1.1;
+        font-weight: 600;
+        color: #444;
+        letter-spacing: .5px;
+    }
+}
+
+.rentmy-main-wrapper {
+    h1 {
+        font-size: 55px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .rentmy-main-wrapper {
+        h1 {
+            font-size: 35px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 27px;
+        }
+        h4 {
+            font-size: 22px;
+        }
+        h5 {
+            font-size: 17px;
+        }
+        h6 {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-main-wrapper {
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .rentmy-main-wrapper {
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 23px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rentmy-main-wrapper {
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 17px;
+        }
+    }
+}
+
+.rentmy-main-wrapper {
+    p {
+        padding: 0;
+        margin: 0;
+        font-family: $fontfamily;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+        color: #777;
+    }
+}
+
+.rentmy-main-wrapper {
+    samp,
+    span {
+        font-family: $fontfamily;
+        font-weight: 300 !important;
+        letter-spacing: 0.2px;
+        color: #444;
+    }
+}
+
+.rentmy-main-wrapper {
+    strong,
+    b {
+        font-family: $fontfamily;
+        font-weight: 500;
+    }
+}
+
+.rentmy-main-wrapper {
+    a {
+        font-family: $fontfamily;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.rentmy-main-wrapper {
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            font-family: $fontfamily;
+            font-weight: 300;
+            letter-spacing: 0.2px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.rentmy-main-wrapper {
+    img {
+        max-width: 100%;
+    }
+}
+
+.rentmy-main-wrapper {
+    .table-responsive {
+        display: inline-table;
+    }
+    table {
+        width: 100%;
+        margin-bottom: 0;
+        background-color: transparent;
+        border-collapse: collapse;
+        thead,
+        tbody {
+            border-left: 1px solid #f2f3f8;
+            border-right: 1px solid #f2f3f8;
+            tr {
+                th,
+                td {
+                    font-weight: 400;
+                    font-size: 15px;
+                    letter-spacing: 0.2px;
+                    color: #444;
+                    vertical-align: middle;
+                    border-bottom: 1px solid #f2f3f8;
+                    min-width: 60px;
+                    text-align: left;
+                    padding: 15px 15px;
+                    img {
+                        width: 50px;
+                        border: 4px solid #f2f3f8;
+                    }
+                }
+                th {
+                    background-color: #f2f3f8;
+                    font-weight: 600;
+                    border-top: none;
+                    border-bottom: 1px solid #f2f3f8;
+                }
+            }
+        }
+    }
+}
+
+.rentmy-main-wrapper {
+    button,
+    a {
+        outline: 0;
+        border: none;
+    }
+    .rentmy-button {
+        position: relative;
+        font-family: $fontfamily;
+        display: inline-block;
+        padding: 15px 35px;
+        font-weight: 400;
+        font-size: 15px;
+        border-radius: 0;
+        text-align: center;
+        transition: all .5s;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: 0;
+        letter-spacing: 0.2px;
+        background-color: $themecolor;
+        color: #fff;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        margin-right: 10px;
+        overflow: hidden;
+        z-index: 1;
+        i {
+            font-size: 10px;
+            margin-left: 4px;
+        }
+    }
+    .rm-theme-btn {
+        background-color: $themecolor;
+        color: #fff;
+    }
+    .rm-outline-btn {
+        background-color: transparent;
+        border: 1px solid $themecolor;
+        color: $themecolor;
+    }
+    .rentmy-button {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $buttonhovercolor;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            transition-property: transform;
+            transition-duration: .5s;
+            transition-timing-function: ease-out;
+            z-index: -1;
+        }
+        &:hover {
+            background-color: $buttonhovercolor;
+            &:before {
+                transform: scaleX(1);
+                transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+            }
+        }
+    }
+}
+
+.rentmy-main-wrapper {
+    .disabled {
+        cursor: no-drop;
+        pointer-events: none;
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+        opacity: .65;
+    }
+}
+
+.rentmy-main-wrapper {
+    .rentmy-btn-active {
+        background-color: $themecolor !important;
+        color: #fff !important;
+    }
+}
+
+.rentmy-main-wrapper {
+    .rentmy-form-group {
+        margin-bottom: 15px;
+    }
+}
+
+.rentmy-main-wrapper {
+    label {
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: #444;
+        display: inline-block;
+        font-size: 15px;
+        font-family: $fontfamily;
+    }
+}
+
+.rentmy-main-wrapper {
+    textarea,
+    select,
+    input {
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        font-family: $fontfamily;
+        outline: 0;
+        height: 40px;
+        padding: .375rem .75rem;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #777;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #f2f3f8;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+}
+
+.rentmy-main-wrapper {
+    textarea {
+        resize: none;
+    }
+}
+
+.rentmy-main-wrapper {
+    .rentmy-text-right {
+        text-align: right;
+    }
+}
+
+.rentmy-main-wrapper {
+    .rentmy-checkbox-inline,
+    .rentmy-radio-inline {
+        .rentmy-checkbox,
+        .rentmy-radio {
+            display: inline-block;
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all .3s;
+            padding-right: 10px;
+            color: #444;
+        }
+        .rentmy-checkbox>input,
+        .rentmy-radio>input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+        input[type=checkbox],
+        input[type=radio] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+        .rentmy-checkbox>span,
+        .rentmy-radio>span {
+            border-radius: 3px;
+            background: 0 0;
+            position: absolute;
+            top: 1px;
+            left: 0;
+            height: 18px;
+            width: 18px;
+        }
+        .rentmy-radio>span,
+        .rentmy-checkbox>span {
+            border: 1px solid #bdc3d4;
+        }
+        .rentmy-radio>input:checked~span,
+        .rentmy-checkbox>input:checked~span {
+            border: 1px solid #bdc3d4;
+        }
+        .rentmy-radio>span:after,
+        .rentmy-checkbox>span:after {
+            content: '';
+            position: absolute;
+            display: none;
+        }
+        .rentmy-checkbox>span:after {
+            top: 50%;
+            left: 50%;
+            margin-left: -2px;
+            margin-top: -6px;
+            width: 5px;
+            height: 10px;
+            border-width: 0 2px 2px 0 !important;
+            transform: rotate(45deg);
+        }
+        .rentmy-checkbox>span:after {
+            border: solid #7281a4;
+        }
+        .rentmy-radio>span {
+            border-radius: 50%!important;
+        }
+        .rentmy-radio>span:after {
+            border: solid #7281a4;
+            background: #7281a4;
+        }
+        .rentmy-radio>span:after {
+            top: 50%;
+            left: 50%;
+            margin-left: -3px;
+            margin-top: -3px;
+            height: 6px;
+            width: 6px;
+            border-radius: 100%!important;
+        }
+        .rentmy-checkbox>input:checked~span:after,
+        .rentmy-radio>input:checked~span:after {
+            display: block;
+        }
+    }
+}
+
+.rentmy-main-wrapper {
+    .rentmy-block {
+        display: block;
+    }
+}
+
+.rentmy-main-wrapper {
+    .rm-height {
+        height: 100%;
+    }
+}
+
+.rentmy-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 576px) {
+    .rentmy-container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .rentmy-container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .rentmy-container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .rentmy-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .rentmy-container {
+        max-width: 1320px;
+    }
+}
+
+.rentmy-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.rentmy-align-center {
+    align-items: center;
+}
+
+.rentmy-justify-center {
+    justify-content: center;
+}
+
+.rentmy-flex {
+    display: flex;
+}
+
+.rentmy-column-1,
+.rentmy-column-2,
+.rentmy-column-3,
+.rentmy-column-4,
+.rentmy-column-5,
+.rentmy-column-6,
+.rentmy-column-7,
+.rentmy-column-8,
+.rentmy-column-9,
+.rentmy-column-10,
+.rentmy-column-11,
+.rentmy-column-12 {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.rentmy-column-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+}
+
+.rentmy-column-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.rentmy-column-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.rentmy-column-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.rentmy-column-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.rentmy-column-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.rentmy-column-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+.rentmy-column-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.rentmy-column-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.rentmy-column-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.rentmy-column-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+}
+
+.rentmy-column-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+// section mian title css
+.rentmy-mainsection-title {
+    text-align: center;
+    .rm-dot-title {
+        position: relative;
+        background-color: $themecolor;
+        top: -20px;
+        width: 4px;
+        height: 4px;
+        display: inline-block;
+        &:before {
+            position: absolute;
+            left: 10px;
+            top: 0;
+            content: '';
+            background-color: $themecolor;
+            width: 4px;
+            height: 4px;
+        }
+        &:after {
+            position: absolute;
+            left: 20px;
+            top: 0;
+            content: '';
+            background-color: $themecolor;
+            width: 4px;
+            height: 4px;
+        }
+    }
+    .rm-section-title {}
+}
+
+// main global pages css============================================
+// ============================================================ 
+// header css 
+.rentmy-header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    z-index: 9999;
+    box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+    border-bottom: 1px solid #f2f3f8;
+    .rentmy-container {
+        .rentmy-row {
+            display: flex;
+            flex-wrap: wrap;
+            .rentmy-logo-area {
+                flex: 0 0 17.333333%;
+                max-width: 17.333333%;
+                padding-left: 15px;
+                .rentmy-logo-area-inner {
+                    display: table;
+                    table-layout: fixed;
+                    width: 140px;
+                    height: 100%;
+                    .rentmy-logo-area-middle {
+                        display: table-cell;
+                        height: 100px;
+                        vertical-align: middle;
+                        a {
+                            img {
+                                width: unset;
+                                height: 80px;
+                            }
+                        }
+                    }
+                }
+            }
+            .rentmy-menu {
+                flex: 0 0 82.333333%;
+                max-width: 82.333333%;
+                padding-right: 15px;
+                .rentmy-mobile-menubar {
+                    display: none;
+                }
+                .rentmy-nav-manu {
+                    display: inline-block;
+                    float: right;
+                    ul {
+                        li {
+                            display: inline-block;
+                            position: relative;
+                            a {
+                                line-height: 100px;
+                                padding: 0 20px;
+                                display: block;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                font-size: 15px;
+                                color: #444;
+                                i {
+                                    font-size: 15px;
+                                }
+                                .lni-chevron-down {
+                                    font-size: 10px;
+                                }
+                                &:hover {
+                                    color: $themecolor;
+                                }
+                                &.rentmy-active-menu {
+                                    color: $themecolor;
+                                }
+                            }
+                            ul {
+                                display: none;
+                                border: none;
+                                margin: 0;
+                                background-color: #fff;
+                                list-style: none;
+                                border-radius: 8px;
+                                padding: 0px 0;
+                                width: 220px;
+                                position: absolute;
+                                top: 100%;
+                                border-top: 5px solid #f7f7fa;
+                                right: 0;
+                                visibility: hidden;
+                                transition: 0.3s all ease-in-out;
+                                -webkit-transition: 0.3s all ease-in-out;
+                                z-index: 1;
+                                -webkit-box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+                                box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+                                &:before {
+                                    content: "\f0d8";
+                                    font-family: FontAwesome;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    text-decoration: inherit;
+                                    color: #fff;
+                                    font-size: 18px;
+                                    padding-right: 0.5em;
+                                    position: absolute;
+                                    top: -12px;
+                                    right: 22px;
+                                }
+                                li {
+                                    float: unset !important;
+                                    width: 100%;
+                                    display: inline-block;
+                                    a {
+                                        display: block !important;
+                                        padding: 10px 20px !important;
+                                        font-weight: normal !important;
+                                        font-size: 14px;
+                                        line-height: 20px !important;
+                                        border-bottom: 1px solid #f2f3f8;
+                                        -webkit-transition: all .3s;
+                                        transition: all .3s;
+                                        &:hover {
+                                            color: #fff !important;
+                                            background-color: #444;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover ul {
+                                display: block;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .rentmy-nav-manu {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .rentmy-header {
+        .rentmy-container {
+            .rentmy-row {
+                .rentmy-logo-area {
+                    .rentmy-logo-area-inner {
+                        .rentmy-logo-area-middle {
+                            img {}
+                        }
+                    }
+                }
+                .rentmy-menu {
+                    .rentmy-mobile-menubar {}
+                    .rentmy-nav-manu {
+                        ul {
+                            li {
+                                a {
+                                    padding: 0 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-header {
+        .rentmy-container {
+            .rentmy-row {
+                .rentmy-logo-area {
+                    .rentmy-logo-area-inner {
+                        .rentmy-logo-area-middle {
+                            img {
+                                padding-left: 0;
+                            }
+                        }
+                    }
+                }
+                .rentmy-menu {
+                    position: relative;
+                    .rentmy-mobile-menubar {
+                        position: absolute;
+                        right: 20px;
+                        top: 42px;
+                        display: block;
+                    }
+                    .rentmy-nav-manu {
+                        display: none;
+                        position: fixed;
+                        left: 0;
+                        width: 100%;
+                        background: #fff;
+                        box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+                        top: 100px;
+                        z-index: 9;
+                        ul {
+                            padding: 15px 0;
+                            li {
+                                display: inline-block;
+                                margin: 0;
+                                width: 100%;
+                                a {
+                                    line-height: 37px;
+                                    padding: 0 20px;
+                                }
+                                ul {
+                                    width: 100%;
+                                    left: 0;
+                                    &:before {
+                                        left: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// productlist css
+.rentmy-container {
+    &.products {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .rentmy-sortdatetime {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        .rentmy-product-datetime {
+            flex: 0 0 75%;
+            max-width: 75%;
+            .rentmy-product-datetime-inner {
+                display: inline-block;
+                margin-right: 10px;
+                label {
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                    color: #444;
+                    display: inline-block;
+                }
+                .rentmy-datetime-input {
+                    display: flex;
+                    input {
+                        outline: 0;
+                        border: 1px solid #f2f3f8;
+                        height: 40px;
+                        padding: 0 10px;
+                        font-size: 15px;
+                        border-radius: 4px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        width: 125px;
+                    }
+                    select {
+                        width: 125px;
+                    }
+                }
+                .rentmy-datetimeapply-btn {
+                    padding: 10px 15px;
+                }
+            }
+        }
+        .rentmy-product-sort {
+            flex: 0 0 25%;
+            max-width: 25%;
+            .rentmy-product-sort-inner {
+                float: right;
+                label {
+                    width: 100%;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                    color: #444;
+                    display: inline-block;
+                }
+                select {
+                    border: 1px solid #eee;
+                    height: 40px;
+                    padding: 0 10px;
+                    border-radius: 4px;
+                    outline: 0;
+                    color: #444;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .rentmy-product-list {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        .rentmy-product {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            flex: 0 0 25%;
+            max-width: 25%;
+            padding: 0 15px;
+            .rentmy-product-inner {
+                margin-bottom: 30px;
+                cursor: pointer;
+                box-shadow: 0px 15px 60px 0px rgba(216, 216, 216, 0.4);
+                &:hover {
+                    box-shadow: none;
+                }
+                .rentmy-product-image {
+                    height: 230px;
+                    padding-top: 15px;
+                    overflow: hidden;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        transition: all ease-in-out .5s;
+                        -webkit-transition: all ease-in-out .5s;
+                        -o-transition: all ease-in-out .5s;
+                        -moz-transition: all ease-in-out .5s;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    .rentmy-product-overlow {
+                        position: absolute;
+                        background-color: rgba(255, 255, 255, .5);
+                        z-index: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        cursor: pointer;
+                        text-align: center;
+                        transition: all ease-in-out .5s;
+                        -webkit-transition: all ease-in-out .5s;
+                        -o-transition: all ease-in-out .5s;
+                        -moz-transition: all ease-in-out .5s;
+                        .rentmy-addcart-btn,
+                        .rentmy-cart-btn {
+                            margin: 0 auto;
+                            width: 45px;
+                            height: 45px;
+                            border-radius: 100px;
+                            margin-top: 35%;
+                            padding: 0;
+                            text-align: center;
+                            line-height: 45px;
+                            background-color: $themecolor;
+                            color: #fff;
+                            border: none;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            display: inline-block;
+                            &:hover {
+                                background-color: $themehovercolor;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    .rentmy-product-image {
+                        img {
+                            transform: scale(1.1);
+                            -webkit-transform: scale(1.1);
+                            -moz-transform: scale(1.1);
+                        }
+                        .rentmy-product-overlow {
+                            opacity: 6;
+                            top: 0;
+                        }
+                    }
+                }
+                .rentmy-product-body {
+                    position: relative;
+                    padding: 15px;
+                    min-height: 77px;
+                    .rentmy-product-title {
+                        font-size: 15px;
+                        padding-bottom: 8px;
+                    }
+                    .rentmy-product-price {
+                        font-size: 13px;
+                        font-weight: 400;
+                        span {
+                            font-weight: 600 !important;
+                        }
+                    }
+                    .rentmy-cart-btn {
+                        position: absolute;
+                        top: 18px;
+                        right: 15px;
+                        display: block !important;
+                        border-radius: 3px;
+                        float: right;
+                        padding: 8px 10px;
+                        transition: all 50ms ease-in;
+                        cursor: pointer;
+                        font-size: 14pt;
+                        color: #fff;
+                        background-color: #444;
+                        &:hover {
+                            background-color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rentmy-pagination {
+        ul {
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+            list-style: none;
+            border-radius: .25rem;
+            li {
+                a {
+                    position: relative;
+                    display: block;
+                    padding: .5rem .75rem;
+                    margin-left: -1px;
+                    line-height: 1.25;
+                    color: #222;
+                    background-color: #fff;
+                    border: 1px solid #dee2e6;
+                    &:hover {
+                        z-index: 2;
+                        color: #0056b3;
+                        text-decoration: none;
+                        background-color: #e9ecef;
+                        border-color: #dee2e6;
+                    }
+                    &.active {
+                        background-color: $themecolor;
+                        border: 1px solid $themecolor !important;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1399px) {
+    .rentmy-container {
+        .rentmy-sortdatetime {
+            .rentmy-product-datetime {
+                flex: 0 0 80%;
+                max-width: 80%;
+            }
+            .rentmy-product-sort {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .rentmy-container {
+        .rentmy-sortdatetime {
+            .rentmy-product-datetime {
+                flex: 0 0 70%;
+                max-width: 70%;
+                .rentmy-product-datetime-inner {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+            }
+            .rentmy-product-sort {
+                flex: 0 0 30%;
+                max-width: 30%;
+                .rentmy-product-sort-inner {
+                    float: unset;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .rentmy-product-list {
+            .rentmy-product {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-container {
+        .rentmy-product-list {
+            .rentmy-product {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rentmy-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        .rentmy-sortdatetime {
+            .rentmy-product-datetime {
+                flex: 0 0 100%;
+                max-width: 100%;
+                .rentmy-product-datetime-inner {
+                    width: 100%;
+                }
+            }
+            .rentmy-product-sort {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .rentmy-product-list {
+            .rentmy-product {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+// footer css
+.rentmy-footer {
+    background-color: #fff;
+    border-top: 1px solid #f2f3f8;
+    .rentmy-top-footer {
+        padding: 40px 0;
+        .rentmy-container {
+            .rentmy-row {
+                display: flex;
+                flex-wrap: wrap;
+                .rentmy-footer-contact {
+                    flex: 0 0 30%;
+                    max-width: 30%;
+                }
+                .rentmy-footer-links {
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                }
+                .rentmy-footer-newslatter {
+                    flex: 0 0 30%;
+                    max-width: 30%;
+                }
+                .rentmy-footer-contact,
+                .rentmy-footer-links,
+                .rentmy-footer-newslatter {
+                    h4 {
+                        color: #555;
+                        font-weight: 700;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                        padding-bottom: 0px;
+                        border-left: 2px solid #555;
+                        padding-left: 10px;
+                        margin-bottom: 15px;
+                        line-height: 18px;
+                    }
+                }
+                .rentmy-footer-contact {
+                    ul {
+                        li {
+                            color: #666;
+                            font-weight: 400;
+                            margin-top: 8px;
+                            font-size: 15px;
+                            a {
+                                color: #555;
+                            }
+                            i {
+                                width: 30px;
+                                height: 30px;
+                                background-color: $themecolor;
+                                text-align: center;
+                                line-height: 30px;
+                                font-size: 12px;
+                                margin-right: 8px;
+                                border-radius: 50px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .rentmy-footer-links {
+                    ul {
+                        li {
+                            margin-bottom: 5px;
+                            a {
+                                color: #666 !important;
+                                font-weight: 400;
+                                padding-top: 10px;
+                                margin-bottom: 5px;
+                                font-size: 0.9rem;
+                                letter-spacing: 1px;
+                                &:hover {
+                                    color: #999 !important;
+                                }
+                                i {
+                                    font-size: 12px;
+                                    display: none;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rentmy-footer-newslatter {
+                    p {
+                        color: #666;
+                        padding-bottom: 15px;
+                        font-weight: 400;
+                    }
+                    input {
+                        display: block;
+                        width: 100%;
+                        height: calc(2.25rem + 2px);
+                        padding: .375rem .75rem;
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        color: #495057;
+                        background-color: #fff;
+                        background-clip: padding-box;
+                        border: 1px solid #ced4da;
+                        border-radius: .25rem;
+                        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                        height: 40px;
+                        border-radius: 4px;
+                    }
+                    .renty-subscribe-btn {
+                        margin-top: 20px;
+                        background-color: #444;
+                        padding: 12px 0;
+                        color: #fff;
+                        display: block;
+                        width: 100%;
+                        font-size: 15px;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .rentmy-bottom-footer {
+        .rentmy-container {
+            padding: 20px 15px !important;
+            border-top: 1px solid #f2f3f8;
+            .rentmy-row {
+                display: flex;
+                flex-wrap: wrap;
+                .rentmy-bottom-footer-content {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    p {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        color: #666;
+                        text-align: center;
+                        font-size: 15px;
+                        a {
+                            color: $themecolor;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-footer {
+        .rentmy-top-footer {
+            .rentmy-container {
+                padding: 0 15px;
+                .rentmy-row {
+                    .rentmy-footer-contact {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .rentmy-footer-links {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .rentmy-footer-newslatter {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .rentmy-footer-contact,
+                    .rentmy-footer-links,
+                    .rentmy-footer-newslatter {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rentmy-footer {
+        .rentmy-top-footer {
+            .rentmy-container {
+                padding: 0 15px;
+                .rentmy-row {
+                    .rentmy-footer-contact,
+                    .rentmy-footer-links,
+                    .rentmy-footer-newslatter {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// product details css
+.rentmy-modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+    z-index: 9999;
+    .rentmy-modal {
+        opacity: 0;
+    }
+    &.is-open {
+        opacity: 1;
+        pointer-events: auto;
+        .rentmy-modal {
+            transform: translate(0px, 0px);
+            opacity: unset;
+        }
+    }
+    .rentmy-modal {
+        transform: translate(0px, -50px);
+        transition: all 0.7s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+        position: relative;
+        padding: 20px;
+        width: 900px;
+        min-height: 500px;
+        background-color: #fff;
+        color: #231D23;
+        overflow: unset;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.4);
+        .rentmy-modalclose {
+            position: absolute;
+            padding: 10px 15px;
+            font-size: 18px;
+            text-align: center;
+            background: transparent;
+            color: #fff;
+            top: -35px;
+            right: -12px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .rentmy-modal-body {
+            min-height: 350px;
+            max-height: 500px;
+            overflow: auto;
+            .rentmy-modal-inner {
+                display: flex;
+                flex-wrap: wrap;
+                .rentmy-modal-leftside {
+                    flex: 0 0 45%;
+                    max-width: 45%;
+                    .rentmy-package-details-image,
+                    .rentmy-product-details-image {
+                        width: 100%;
+                        height: 100%;
+                        display: -webkit-box;
+                        display: flex;
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                        flex-direction: column;
+                        .rentmy-package-view-image,
+                        .rentmy-product-view-image {
+                            display: -webkit-box;
+                            display: flex;
+                            margin-bottom: 15px;
+                            border-radius: 5px;
+                            padding: 15px;
+                            img {
+                                width: 100%;
+                                &.rentmy-package-viewimage-active,
+                                &.rentmy-product-viewimage-active {
+                                    display: block;
+                                    width: 100%;
+                                    max-width: 290px;
+                                    max-height: 390px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    object-fit: contain;
+                                    transition: all .5s;
+                                }
+                            }
+                        }
+                        .rentmy-package-multipleimage,
+                        .rentmy-product-multipleimage {
+                            display: -webkit-box;
+                            display: flex;
+                            overflow: hidden;
+                            .rentmy-package-thumb-item,
+                            .rentmy-product-thumb-item {
+                                flex-basis: 100%;
+                                border: 2px solid #f2f3f8;
+                                border-radius: 3px;
+                                max-width: 60px;
+                                width: 60px;
+                                &:not(:last-child) {
+                                    margin-right: 5px;
+                                }
+                                &.rentmy-package-thumb-active,
+                                &.rentmy-product-thumb-active {
+                                    border: 2px solid #555;
+                                }
+                                img {
+                                    width: 50px;
+                                    height: 50px;
+                                    cursor: pointer;
+                                    object-fit: contain;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rentmy-modal-rightside {
+                    flex: 0 0 55%;
+                    max-width: 55%;
+                    padding-left: 20px;
+                    p {
+                        font-size: 12px;
+                        font-weight: 400;
+                        span {
+                            font-weight: 500 !important;
+                        }
+                    }
+                    .rentmy-product-title {
+                        font-size: 20px;
+                        padding-bottom: 15px;
+                    }
+                    .rentmy-product-price {
+                        font-size: 15px;
+                        padding-bottom: 15px;
+                        font-weight: 400;
+                        b {
+                            font-weight: 600;
+                        }
+                    }
+                    .rentmy-modal-rentbuy {
+                        padding-bottom: 15px;
+                        .rentmy-checkbox,
+                        .rentmy-radio {
+                            display: inline-block;
+                            position: relative;
+                            padding-left: 25px;
+                            margin-bottom: 10px;
+                            cursor: pointer;
+                            font-size: 1rem;
+                            transition: all .3s;
+                            padding-right: 10px;
+                            color: #586c76;
+                        }
+                        .rentmy-checkbox>input,
+                        .rentmy-radio>input {
+                            position: absolute;
+                            z-index: -1;
+                            opacity: 0;
+                            filter: alpha(opacity=0);
+                        }
+                        input[type=checkbox],
+                        input[type=radio] {
+                            box-sizing: border-box;
+                            padding: 0;
+                        }
+                        .rentmy-checkbox>span,
+                        .rentmy-radio>span {
+                            border-radius: 3px;
+                            background: 0 0;
+                            position: absolute;
+                            top: 1px;
+                            left: 0;
+                            height: 18px;
+                            width: 18px;
+                        }
+                        .rentmy-radio>span,
+                        .m-checkbox>span {
+                            border: 1px solid #bdc3d4;
+                        }
+                        .rentmy-radio>input:checked~span,
+                        .m-checkbox>input:checked~span {
+                            border: 1px solid #bdc3d4;
+                        }
+                        .rentmy-radio>span:after,
+                        .rentmy-checkbox>span:after {
+                            content: '';
+                            position: absolute;
+                            display: none;
+                        }
+                        .rentmy-checkbox>span:after {
+                            top: 50%;
+                            left: 50%;
+                            margin-left: -2px;
+                            margin-top: -6px;
+                            width: 5px;
+                            height: 10px;
+                            border-width: 0 2px 2px 0 !important;
+                            transform: rotate(45deg);
+                        }
+                        .rentmy-checkbox>span:after {
+                            border: solid #7281a4;
+                        }
+                        .rentmy-radio>span {
+                            border-radius: 50%!important;
+                        }
+                        .rentmy-radio>span:after {
+                            border: solid #7281a4;
+                            background: #7281a4;
+                        }
+                        .rentmy-radio>span:after {
+                            top: 50%;
+                            left: 50%;
+                            margin-left: -3px;
+                            margin-top: -3px;
+                            height: 6px;
+                            width: 6px;
+                            border-radius: 100%!important;
+                        }
+                        .rentmy-checkbox>input:checked~span:after,
+                        .rentmy-radio>input:checked~span:after {
+                            display: block;
+                        }
+                    }
+                    .rentmy-modal-product-variants {
+                        .rentmy-product-variant {
+                            padding-bottom: 15px;
+                            &:last-child {
+                                padding-bottom: 15px;
+                            }
+                            select {
+                                width: 155px;
+                            }
+                        }
+                    }
+                    .rentmy-modal-quantity {
+                        .rentmy-number-block {
+                            float: left;
+                            width: 100%;
+                            margin-bottom: 15px;
+                            .rentmy-num-in {
+                                float: left;
+                                width: auto;
+                                border: 1px solid #f2f3f8;
+                                span {
+                                    font-size: 24px;
+                                    text-align: center;
+                                    display: block;
+                                    width: 35px;
+                                    float: left;
+                                    height: 32px;
+                                    background-color: transparent;
+                                    color: #586c76;
+                                    cursor: pointer;
+                                    -webkit-transition: all 0.3s;
+                                    -o-transition: all 0.3s;
+                                    transition: all 0.3s;
+                                    font-weight: 400 !important;
+                                    &:hover {
+                                        background-color: #f2f3f8;
+                                    }
+                                    &.rentmy-minus {
+                                        border-right: 1px solid #f2f3f8;
+                                    }
+                                    &.rentmy-plus {
+                                        border-left: 1px solid #f2f3f8;
+                                    }
+                                }
+                                .rentmy-plus {
+                                    font-size: 18px !important;
+                                    line-height: 32px;
+                                }
+                            }
+                            .rentmy-in-num {
+                                font-size: 14px;
+                                float: left;
+                                height: 32px;
+                                width: 83px;
+                                background-color: #fff;
+                                text-align: center;
+                            }
+                            input {
+                                border: none;
+                                float: left;
+                                width: 44px;
+                                line-height: 34px;
+                                text-align: center;
+                                color: #586c76;
+                            }
+                            p {
+                                float: left;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .rentmy-modal-cartbtn {
+                        background-color: #444;
+                        padding: 10px 30px;
+                        color: #eee;
+                        margin-bottom: 15px;
+                    }
+                    .rentmy-modalproduct-description {
+                        padding-top: bottom;
+                        p {
+                            font-size: 14px;
+                            color: #586c76;
+                            font-weight: 400;
+                        }
+                        .description {
+                            width: 100% !important;
+                            font-size: 14px !important;
+                            line-height: 20px;
+                            color: #666 !important;
+                        }
+                        span {
+                            font-size: 14px !important;
+                            line-height: 20px;
+                            color: #666 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-modal-overlay {
+        padding: 0 15px;
+        .rentmy-modal {
+            width: 450px;
+            .rentmy-modal-body {
+                height: 400px;
+                overflow: auto;
+                .rentmy-modal-inner {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .rentmy-modal-leftside {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        img {
+                            width: 100%;
+                            max-width: 100%;
+                        }
+                    }
+                    .rentmy-modal-rightside {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        padding-left: 0;
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rentmy-modal-overlay {
+        .rentmy-modal {
+            width: 350px;
+        }
+    }
+}
+
+// package details modal css
+.rentmy-package-modal-overlay {
+    .rentmy-modal {
+        width: 1000px;
+        .rentmy-modal-body {
+            .rentmy-modal-inner {
+                .rentmy-modal-leftside {
+                    flex: 0 0 300px;
+                    max-width: 300px;
+                }
+                .rentmy-modal-rightside {
+                    flex: 0 0 345px;
+                    max-width: 345px;
+                    .price-options {
+                        padding-bottom: 15px;
+                    }
+                }
+                .rentmy-details-package {
+                    flex: 0 0 300px;
+                    max-width: 300px;
+                    .rentmy-details-package-body {
+                        padding-bottom: 10px;
+                        border: 1px solid #f2f3f8;
+                        h6 {
+                            padding: 10px 15px;
+                            background-color: #f2f3f8;
+                            border-bottom: 1px solid #eee;
+                            text-align: left;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            font-size: 15px;
+                            margin: 0;
+                            color: #444;
+                            margin-bottom: 10px;
+                        }
+                        .rentmy-package-single-list {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 5px 15px;
+                            h5 {
+                                padding: 0 0;
+                                font-size: 15px;
+                                font-weight: 500;
+                                margin-bottom: 0;
+                            }
+                            select {
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-package-modal-overlay {
+        padding: 0 15px;
+        .rentmy-modal {
+            width: 450px;
+            .rentmy-modal-body {
+                height: 400px;
+                overflow: auto;
+                .rentmy-modal-inner {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .rentmy-modal-leftside {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                    .rentmy-modal-rightside {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        padding-left: 0;
+                        padding-top: 20px;
+                    }
+                    .rentmy-details-package {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rentmy-modal-overlay {
+        .rentmy-modal {
+            width: 350px;
+        }
+    }
+}
+
+// cartbar css
+.rentmy-cartbar-launcher {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    height: 60px;
+    width: 60px;
+    background: #fbfdfc;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
+    border-radius: 5px;
+    transition: width 100ms ease-in;
+    transition: all 100ms ease-in;
+    color: #515151;
+    z-index: 99;
+    &.rentmy-cartbar-launcher-hover,
+    &:hover {
+        width: 360px;
+    }
+    .rentmy-cartbar-launcher-icon::before,
+    .rentmy-cartbar-launcher-icon::after,
+    .rentmy-cartbar-launcher-icon {
+        width: 60px;
+        height: 60px;
+        background: #444;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 60px;
+        font-size: 25px;
+        font-weight: unset;
+    }
+    .rentmy-cartbar-launcher-summary {
+        background: #fbfdfc;
+        width: 287px;
+        height: 60px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 8px 5px;
+        font-size: 13px;
+        .rentmy-summary,
+        .rentmy-dates {
+            color: #444;
+            strong {
+                font-weight: 600;
+            }
+            small {
+                font-weight: 400;
+            }
+        }
+        .rentmy-summary {
+            .rentmy-total {
+                float: right;
+            }
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #f0f3f4;
+        }
+    }
+}
+
+// cart sidebar css
+.rentmy-cartsidebar-overlay {
+    position: unset;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+    &.is-open {
+        opacity: unset;
+        pointer-events: unset;
+        .rentmy-cart-sidebar-content {
+            transform: translate(0px, 0px);
+        }
+    }
+    .rentmy-cart-sidebar-content {
+        transform: translate(0px, -50px);
+        transition: all 0.7s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+        position: fixed;
+        padding: 0;
+        width: 340px;
+        height: 600px;
+        background-color: #fff;
+        color: #231D23;
+        overflow: hidden;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.4);
+        right: 15px;
+        bottom: 15px;
+        z-index: 9999;
+        border-radius: 8px;
+        .rentmy-cart-modalclose {
+            position: absolute;
+            padding: 10px 15px;
+            font-size: 15px;
+            text-align: center;
+            background: transparent;
+            color: #fff;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            z-index: 9;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .rentmy-cart-sidebar-body {
+            .rentmy-cart-sidebar-inner {
+                .rentmy-sidebar-head {
+                    border-radius: 8px 8px 0 0;
+                    width: 100%;
+                    z-index: 1;
+                    background: #444;
+                    .rentmy-title {
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        padding: 20px 0 10px;
+                        z-index: 2;
+                        position: relative;
+                        border-top-right-radius: 8px;
+                        border-top-left-radius: 8px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                    .rentmy-selected-date {
+                        .rentmy-selected-date-inner {
+                            display: flex;
+                            padding: 10px 0;
+                            justify-content: center;
+                            cursor: pointer;
+                            .rentmy-selected-date-leftside,
+                            .rentmy-selected-date-rightside {
+                                padding: 0 15px;
+                                color: #fff;
+                                font-size: 12px;
+                                p {
+                                    color: #fff;
+                                    font-size: 12px;
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .rentmy-cart-sidebar-lines {
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    width: 100%;
+                    padding-bottom: 10px;
+                    position: relative;
+                    flex-grow: 1;
+                    z-index: 0;
+                    height: 411px;
+                    ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0px 10px;
+                        li {
+                            .rentmy-list-item {
+                                margin: 10px auto 0 auto;
+                                padding: 10px;
+                                border-radius: 3px;
+                                font-size: 16px;
+                                font-weight: 400;
+                                background-color: #fff;
+                                border: 1px solid #fff;
+                                position: relative;
+                                z-index: 2;
+                                opacity: 1;
+                                transform: scale(1);
+                                box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+                                &.rentmy-list-empty-item {
+                                    border: 1px solid red;
+                                }
+                                .rentmy-product-image {
+                                    width: 60px;
+                                    height: 60px;
+                                    display: inline-block;
+                                    border-radius: 3px;
+                                }
+                                .rentmy-cart-line {
+                                    display: inline-block;
+                                    vertical-align: top;
+                                    margin-left: 10px;
+                                    color: #515151;
+                                    width: 200px;
+                                    font-size: 13px;
+                                    .rentmy-product-name {
+                                        font-size: 15px;
+                                        margin: 3px 0 7px;
+                                        font-weight: 600;
+                                        line-height: 1.3;
+                                    }
+                                    .rentmy-modal-quantity {
+                                        .rentmy-number-block {
+                                            float: left;
+                                            width: 100%;
+                                            padding: 0;
+                                            .rentmy-num-in {
+                                                float: left;
+                                                width: auto;
+                                                border: 1px solid #f2f3f8;
+                                                span {
+                                                    font-size: 20px;
+                                                    width: 30px;
+                                                    height: 26px;
+                                                    text-align: center;
+                                                    display: block;
+                                                    float: left;
+                                                    background-color: #f2f3f8;
+                                                    color: #586c76;
+                                                    cursor: pointer;
+                                                    -webkit-transition: all 0.3s;
+                                                    -o-transition: all 0.3s;
+                                                    transition: all 0.3s;
+                                                    font-weight: 400 !important;
+                                                    &:hover {
+                                                        background-color: #f2f3f8;
+                                                    }
+                                                }
+                                                .rentmy-plus {
+                                                    font-size: 16px !important;
+                                                    line-height: 26px;
+                                                }
+                                            }
+                                            .rentmy-in-num {
+                                                font-size: 14px;
+                                                float: left;
+                                                height: 26px;
+                                                width: 40px;
+                                                background-color: #fff;
+                                                text-align: center;
+                                                outline: 0;
+                                            }
+                                            input {
+                                                border: none;
+                                                float: left;
+                                                width: 44px;
+                                                line-height: 34px;
+                                                text-align: center;
+                                                color: #586c76;
+                                            }
+                                        }
+                                    }
+                                }
+                                .rentmy-price {
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 46px;
+                                    font-weight: 500 !important;
+                                }
+                                .rentmy-remove-product {
+                                    position: absolute;
+                                    top: 6px;
+                                    right: 10px;
+                                    padding: 7px;
+                                    cursor: pointer;
+                                    color: #586c76;
+                                    width: 25px;
+                                    display: inline-block;
+                                    text-align: center;
+                                    opacity: 0.5;
+                                    i {
+                                        font-weight: bold;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .rentmy-cart-sidebar-summary {
+                    width: 100% !important;
+                    background: #FFF !important;
+                    padding: 15px 15px !important;
+                    bottom: 0;
+                    color: #515151;
+                    z-index: 3;
+                    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+                    min-height: 102px;
+                    .rentmy-detail,
+                    .rentmy-strong {
+                        font-size: 14px;
+                        line-height: 1.6;
+                        &:first-child {
+                            margin-top: 0;
+                            margin-bottom: 15px;
+                        }
+                        span {
+                            font-weight: 600 !important;
+                        }
+                        .rentmy-amount {
+                            float: right;
+                        }
+                    }
+                    .rentmy-checkout-btn {
+                        display: block;
+                        padding: 12px 20px;
+                        border-radius: 3px;
+                        text-align: center;
+                        background-color: $themecolor;
+                        width: 100%;
+                        color: #fff;
+                        text-decoration: none !important;
+                        &:hover {
+                            background-color: $themehovercolor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rentmy-cartsidebar-overlay {
+        .rentmy-cart-sidebar-content {
+            width: 330px;
+            height: 95%;
+            .rentmy-cart-sidebar-body {
+                .rentmy-cart-sidebar-inner {
+                    .rentmy-cart-sidebar-lines {
+                        height: 240px;
+                    }
+                    .rentmy-cart-sidebar-summary {
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// date time modal css
+.rentmy-datetime-modal-overlay {
+    z-index: 99999;
+    .rentmy-modal {
+        width: 630px !important;
+        min-height: unset !important;
+        padding: 0 !important;
+        .setCrtDateTime {
+            padding: 20px;
+            min-height: auto;
+            max-height: initial;
+            overflow: auto;
+            .rentmy-product-datetime {
+                display: flex;
+                .rentmy-product-datetime-inner {
+                    display: inline-block;
+                    width: 100%;
+                    label {
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                        color: #586c76;
+                        display: inline-block;
+                    }
+                    .rentmy-datetime-input {
+                        display: flex;
+                        margin-bottom: 15px;
+                        input {
+                            outline: 0;
+                            border: 1px solid #f2f3f8;
+                            height: 40px;
+                            padding: 0 10px;
+                            font-size: 15px;
+                            border-radius: 4px;
+                            color: #586c76;
+                            display: inline-block;
+                            width: auto;
+                            margin-right: 5px;
+                        }
+                        select {
+                            display: inline-block;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .rentmy-modal-footer {
+            display: flex;
+            padding: 18px;
+            border-top: 1px solid rgb(221, 225, 227);
+            .rentmy-modal-footer-inner {
+                display: inline-block;
+                margin-left: auto;
+                padding-left: 18px;
+                button {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 42px;
+                    padding: 0px 18px;
+                    color: rgb(88, 108, 118);
+                    background-color: rgb(255, 255, 255);
+                    font-weight: 500;
+                    font-size: 14px;
+                    text-align: center;
+                    line-height: 42px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    outline: none;
+                    border: 1px solid rgb(221, 225, 227);
+                    text-decoration: none !important;
+                    &.rentmy-apply-button {
+                        background-color: #444 !important;
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// cart page css 
+.rentmy-cart-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .rentmy-container {
+        .rentmy-row.rentmy-cart-top {
+            .rentmy-column-12 {
+                .rentmy-cart-ordertable {
+                    table {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+        .rentmy-row.rentmy-cart-bottom {
+            padding: 30px 0;
+            .rentmy-column-6 {
+                .rentmy-row {
+                    padding: 0;
+                    .rentmy-column-7 {
+                        .coupon-code-input {
+                            height: 45px;
+                        }
+                    }
+                    .rentmy-column-5 {
+                        .rentmy-apply-coupon-btn {
+                            float: right;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+                .rentmy-row {
+                    .rentmy-column-12 {
+                        .rentmy-proceed-checkout-btn {
+                            float: right;
+                        }
+                    }
+                }
+            }
+            .rentmy-column-6 {
+                .rentmy-cart-order-summery {
+                    padding: 0 15px;
+                    h5 {
+                        font-size: 20px;
+                        color: #555;
+                        text-align: center;
+                        border-bottom: 1px solid;
+                        padding: 15px 10px;
+                        border-bottom: 1px solid #eee;
+                        background-color: #f2f3f8;
+                        width: 100%;
+                    }
+                    table {
+                        thead,
+                        tbody {
+                            tr {
+                                th,
+                                td {
+                                    h4 {
+                                        font-size: 20px;
+                                        color: #555;
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.rentmy-cart-wrapper-empty {
+        height: 85vh;
+        .rentmy-container {
+            height: 100%;
+            .rentmy-row {
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                .rentmy-column-12 {
+                    text-align: center;
+                    h4 {
+                        padding: 20px 0;
+                    }
+                    .rentmy-button {
+                        padding: 12px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rentmy-cart-wrapper {
+        .rentmy-container {
+            .rentmy-row.rentmy-cart-top {
+                .rentmy-column-12 {
+                    .rentmy-cart-ordertable {
+                        table {
+                            display: block;
+                            width: 100%;
+                            overflow-x: auto;
+                            -webkit-overflow-scrolling: touch;
+                            -ms-overflow-style: -ms-autohiding-scrollbar;
+                        }
+                    }
+                }
+            }
+            .rentmy-row.rentmy-cart-bottom {
+                .rentmy-column-6 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    .rentmy-button {
+                        font-size: 14px;
+                        padding: 10px 15px;
+                    }
+                }
+                .rentmy-column-6 {
+                    .rentmy-cart-order-summery {
+                        padding: 0;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// checkout page css 
+.rentmy-checkout-wrapper {
+    padding: 50px 0;
+    .rentmy-container {
+        .rentmy-row {
+            .rentmy-column-6 {
+                .rentmy-customer-login {
+                    background-color: #f2f3f8;
+                    padding: 12px 15px;
+                    margin-bottom: 40px;
+                    h5 {
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: #555;
+                        a {
+                            padding-left: 15px;
+                            color: #59a9a1;
+                        }
+                    }
+                }
+                .rentmy-billing-fullfilment-content {
+                    padding-top: 0;
+                    .rentmy-billing-address,
+                    .rentmy-fulfillment {
+                        border: 3px solid #f2f3f8;
+                        padding: 0 20px;
+                        position: relative;
+                        width: 100%;
+                        padding-top: 25px;
+                        padding-bottom: 15px;
+                        .rentmy-fulfillment-error {
+                            .rentmy-error {
+                                padding-bottom: 15px;
+                                li {
+                                    padding: 5px 0;
+                                    color: #F44336;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    display: inline-block;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        h2 {
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            font-size: 22px;
+                            letter-spacing: .5px;
+                            position: absolute;
+                            left: 11px;
+                            top: -13px;
+                            background-color: #fff;
+                            width: auto;
+                            padding: 0 10px;
+                            height: 22px;
+                        }
+                        .rentmy-row {
+                            margin: 0 -15px;
+                            .rentmy-column-6,
+                            .rentmy-column-12 {
+                                padding: 0 15px;
+                            }
+                            .rentmy-shipping-methods {
+                                padding-bottom: 20px;
+                                .shipping-method-title {
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    padding-bottom: 15px;
+                                    padding-top: 10px;
+                                }
+                                .rentmy-radio-inline {
+                                    padding: 10px 0;
+                                    border-bottom: 1px solid #f2f3f8;
+                                    .rentmy-radio {
+                                        margin-bottom: 0;
+                                        width: 100%;
+                                        .rentmy-list-price {
+                                            float: right;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .rentmy-fulfillment {
+                        margin-top: 50px;
+                        .rentmy-collaps {
+                            .rentmy-collaps-item {
+                                .rentmy-collaps-btn {
+                                    .rentmy-radio-inline {
+                                        .rentmy-radio {}
+                                    }
+                                }
+                                .rentmy-collaps-content {
+                                    padding: 10px 0 0;
+                                    .rentmy-pickup-location-list {
+                                        padding-bottom: 20px;
+                                        .rentmy-radio-inline {
+                                            width: 100%;
+                                            height: 35px;
+                                            padding: 6px 0;
+                                            border-bottom: 1px solid #f2f3f8;
+                                            &:first-child {
+                                                border-top: 1px solid #f2f3f8;
+                                            }
+                                            .rentmy-radio {
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                    .renmty-checkout-delivery {
+                                        padding-bottom: 20px;
+                                        .rentmy-delivery-cost {
+                                            padding-bottom: 20px;
+                                            .rentmy-radio-inline {
+                                                padding: 10px 0;
+                                                border-bottom: 1px solid #f2f3f8;
+                                                .rentmy-radio {
+                                                    margin-bottom: 0;
+                                                    width: 100%;
+                                                    .rentmy-list-price {
+                                                        float: right;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .rentmy-btn-delivery-cost,
+                                    .rentmy-btn-shipping-method {
+                                        // float: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rentmy-column-6 {
+                .rentmy-checkout-ordersummery {
+                    padding-left: 30px;
+                    .rentmy-checkout-ordersummery-inner {
+                        position: relative;
+                        padding: 20px 20px 20px;
+                        border: 3px solid #65B3AC;
+                        .rentmy-ordersummery-title {
+                            position: absolute;
+                            top: -15px;
+                            left: 20px;
+                            display: inline-block;
+                            font-size: 22px;
+                            text-transform: uppercase;
+                            margin: 0 auto;
+                            padding: 0 10px;
+                            letter-spacing: .5px;
+                            background-color: #fff;
+                            font-weight: 500;
+                        }
+                        .rentmy-ordersummery-list {
+                            .rentmy-order-list-box {
+                                display: flex;
+                                min-height: 85px;
+                                width: 100%;
+                                border-bottom: 1px solid #f2f3f8;
+                                margin: 0 auto;
+                                padding: 10px 0;
+                                .rentmy-order-img {
+                                    width: 60px;
+                                    margin-right: 14px;
+                                    img {
+                                        width: 60px;
+                                        height: 65px;
+                                        -o-object-fit: contain;
+                                        object-fit: contain;
+                                        border: 1px solid #f2f3f8;
+                                    }
+                                }
+                                .rentmy-order-product-details {
+                                    .rentmy-order-product-name {
+                                        width: 100%;
+                                        display: inline-block;
+                                        padding-top: 8px;
+                                        padding-bottom: 8px;
+                                        .rentmy-order-product-quantity {
+                                            font-family: $fontfamily;
+                                            font-weight: 500!important;
+                                        }
+                                    }
+                                    .rentmy-order-details-bottom {
+                                        width: 100%;
+                                        display: inline-block;
+                                        .rentmy-order-quantity {
+                                            width: auto;
+                                            float: left;
+                                            font-weight: 400;
+                                        }
+                                        .rentmy-order-product-price {
+                                            width: auto;
+                                            float: left;
+                                            text-align: right;
+                                            padding-right: 6px;
+                                            padding-left: 5px;
+                                            font-size: 14px;
+                                            font-weight: 300;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rentmy-checkout-order-table {
+                            table {
+                                tbody {
+                                    border: none;
+                                    tr {
+                                        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                                        th {
+                                            background-color: transparent;
+                                            border: none;
+                                            padding: 10px 0;
+                                            strong {
+                                                font-weight: 500;
+                                                font-size: 18px;
+                                            }
+                                        }
+                                        td {
+                                            border: none;
+                                            strong {
+                                                font-weight: 500;
+                                                font-size: 18px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rentmy-optional-service {
+                            .rentmy-row {
+                                .rentmy-additional-charge-title {
+                                    font-weight: 500;
+                                    font-size: 18px;
+                                    margin-top: 20px;
+                                    margin-bottom: 20px;
+                                    width: 100%;
+                                }
+                                .rentmy-column-12 {
+                                    .rentmy-row {
+                                        flex-wrap: unset;
+                                        padding-bottom: 15px;
+                                        .rentmy-checkbox-inline {
+                                            min-width: 30%;
+                                            flex: auto;
+                                            max-width: max-content;
+                                        }
+                                        .rentmy-optional-service-content {
+                                            position: relative;
+                                            width: 100%;
+                                            min-height: 1px;
+                                            flex: auto;
+                                            max-width: max-content;
+                                            .rentmy-btn-toolbar {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                justify-content: flex-start;
+                                                margin-top: -6px;
+                                                .rentmy-btn-group {
+                                                    position: relative;
+                                                    display: inline-flex;
+                                                    vertical-align: middle;
+                                                    margin-bottom: 10px;
+                                                    margin-right: 10px;
+                                                    .rentmy-btn {
+                                                        display: inline-block;
+                                                        font-weight: 400;
+                                                        text-align: center;
+                                                        white-space: nowrap;
+                                                        vertical-align: middle;
+                                                        -webkit-user-select: none;
+                                                        -moz-user-select: none;
+                                                        -ms-user-select: none;
+                                                        user-select: none;
+                                                        border: 1px solid transparent;
+                                                        padding: .375rem .75rem;
+                                                        font-size: 14px;
+                                                        line-height: 1.5;
+                                                        border-radius: .25rem;
+                                                        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                                                        position: relative;
+                                                        -ms-flex: 0 1 auto;
+                                                        flex: 0 1 auto;
+                                                        background: #f2f3f8;
+                                                        border-color: #eee;
+                                                        color: #333;
+                                                        font-weight: 400;
+                                                    }
+                                                }
+                                                select {
+                                                    height: 34px;
+                                                    width: auto;
+                                                }
+                                            }
+                                            .rentmy-input-ammount-area {
+                                                display: none;
+                                                width: 100%;
+                                                .rentmy-input-group {
+                                                    position: relative;
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    align-items: stretch;
+                                                    width: 100%;
+                                                    width: 230px;
+                                                    input {
+                                                        position: relative;
+                                                        -ms-flex: 1 1 auto;
+                                                        flex: 1 1 auto;
+                                                        width: 1%;
+                                                        margin-bottom: 0;
+                                                        height: 34px !important;
+                                                        border-top-right-radius: 0.25rem;
+                                                        border-bottom-right-radius: 0.25rem;
+                                                        margin-right: 10px;
+                                                    }
+                                                    .rentmy-input-group-append {
+                                                        margin-left: -1px;
+                                                        display: flex;
+                                                        .rentmy-btn {
+                                                            color: #fff;
+                                                            background-color: #555;
+                                                            background-image: none;
+                                                            border-color: #555;
+                                                            padding: 0;
+                                                            width: 35px;
+                                                            height: 32px;
+                                                            text-align: center;
+                                                            margin-top: 0px;
+                                                            border-radius: 2px !important;
+                                                            position: relative;
+                                                            z-index: 2;
+                                                            margin-right: 5px;
+                                                        }
+                                                        .rentmy-optional-cancel-btn {
+                                                            color: #555 !important;
+                                                            background-color: #f2f3f8 !important;
+                                                            border-color: #f2f3f8 !important;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .rentmy-single-optional-service {
+                                                display: inline-flex;
+                                                label {
+                                                    display: inline-block;
+                                                    margin-bottom: 0;
+                                                    font-weight: 400;
+                                                }
+                                                select {
+                                                    height: 34px;
+                                                    width: auto;
+                                                    margin-top: -8px;
+                                                    margin-left: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rentmy-checkout-payment {
+                            padding: 20px 0;
+                            .rentmy-collaps {
+                                .rentmy-collaps-item {
+                                    .rentmy-collaps-content {
+                                        .rentmy-payment-form {
+                                            padding: 15px 0;
+                                            .rentmy-row {
+                                                margin: 0 -15px;
+                                                .rentmy-form-group {
+                                                    padding-left: 15px;
+                                                    padding-right: 15px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rentmy-ordersummery-checkbox {
+                            padding-bottom: 15px;
+                            .rentmy-radio-inline {
+                                .rentmy-checkbox {
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                    a {
+                                        font-weight: 500;
+                                        color: #333;
+                                        &:hover {
+                                            text-decoration: underline !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rentmy-ordersummery-button {
+                            .rentmy-backtocart-btn {
+                                background-color: #2da4e0;
+                                padding: 12px 30px;
+                                color: #fff;
+                                border-radius: 3px;
+                            }
+                            .rentmy-placeorder-btn {
+                                background-color: #65b3ab;
+                                padding: 12px 30px;
+                                color: #fff;
+                                border-radius: 3px;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-checkout-wrapper {
+        padding: 30px 0;
+        .rentmy-container {
+            .rentmy-row {
+                .rentmy-column-6 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    .rentmy-billing-fullfilment-content {
+                        .rentmy-fulfillment {
+                            .rentmy-collaps {
+                                .rentmy-collaps-item {
+                                    .rentmy-collaps-content {
+                                        .rentmy-pickup-location-list {
+                                            .rentmy-radio-inline {
+                                                height: auto;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .rentmy-column-6 {
+                    .rentmy-checkout-ordersummery {
+                        padding-left: 0;
+                        margin-top: 30px;
+                        .rentmy-checkout-ordersummery-inner {
+                            .rentmy-ordersummery-button {
+                                .rentmy-backtocart-btn {
+                                    padding: 12px 20px;
+                                }
+                                .rentmy-placeorder-btn {
+                                    padding: 12px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// collaps css 
+.rentmy-collaps {
+    .rentmy-collaps-item {
+        .rentmy-collaps-btn {
+            &.rentmy-active {
+                .rentmy-radio-inline {
+                    .rentmy-radio {
+                        span:after {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .rentmy-collaps-content {
+            display: none;
+        }
+    }
+}
+
+// category filter page css
+.rentmy-container {
+    &.products_list {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .rentmy-row {
+        .rentmy-column-3 {
+            .rentmy-category-filter {
+                // box-shadow: 0px 15px 60px 0px rgba(216, 216, 216, 0.4);
+                .rentmy-category-filter-inner {
+                    margin-bottom: 0;
+                    background: transparent;
+                    h3 {
+                        border-left: none;
+                        text-transform: unset;
+                        height: 45px;
+                        line-height: 45px;
+                        font-weight: 500;
+                        font-size: 20px;
+                        padding-bottom: 15px;
+                        margin-bottom: 0px;
+                        padding-left: 15px;
+                        background-color: #f2f3f8;
+                    }
+                    .rentmy-category-filter-wrapper {
+                        ul {
+                            padding-top: 0;
+                            li {
+                                display: inline-block;
+                                width: 100%;
+                                border-bottom: 1px solid #f9f9f9;
+                                a {
+                                    font-weight: 500;
+                                    text-transform: unset;
+                                    letter-spacing: unset;
+                                    display: block;
+                                    color: #444;
+                                    font-size: 15px;
+                                    word-spacing: 3px;
+                                    text-decoration: none;
+                                    padding: 12px 15px;
+                                    i {
+                                        float: right;
+                                        font-size: 10px;
+                                        margin-top: 4px;
+                                    }
+                                }
+                                &.rentmy-filter-checkbox-list {
+                                    padding-top: 10px;
+                                    padding-left: 15px;
+                                    padding-right: 15px;
+                                    .rentmy-checkbox-inline {
+                                        padding: 2px 0;
+                                    }
+                                }
+                                .rentmy-filter-collaps-content {
+                                    padding: 20px 15px 15px;
+                                    .rentmy-row {
+                                        .rentmy-column-12 {
+                                            text-align: center;
+                                            padding-top: 15px;
+                                            .rentmy-button {
+                                                display: inline-block;
+                                                color: #fff;
+                                                padding: 8px 15px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.rm-category-area {
+                            .rentmy-filter-collaps-content {
+                                padding: 0;
+                                width: 100%;
+                                ul {
+                                    border-top: 1px solid #eee;
+                                    padding-top: 0;
+                                    li {
+                                        a {
+                                            padding-left: 25px;
+                                            color: #666;
+                                        }
+                                        &:last-child {
+                                            border-bottom: none;
+                                        }
+                                        .rentmy-filter-collaps-content {
+                                            ul {
+                                                li {
+                                                    a {
+                                                        padding-left: 35px;
+                                                        color: #777;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rm-filter-area {
+                            .rentmy-filter-collaps-content {
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .rentmy-category-product-list {
+            padding-left: 30px;
+            .rentmy-product-list {
+                .rentmy-product {
+                    position: relative;
+                    width: 100%;
+                    min-height: 1px;
+                    flex: 0 0 33.333333%;
+                    max-width: 33.33333%;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .rentmy-container {
+        .rentmy-row {
+            .rentmy-column-3 {
+                flex: 0 0 33.333333%;
+                max-width: 33.333333%;
+            }
+            .rentmy-category-product-list {
+                flex: 0 0 66.666667%;
+                max-width: 66.666667%;
+                .rentmy-product-list {
+                    .rentmy-product {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rentmy-container {
+        .rentmy-row {
+            .rentmy-column-3 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            .rentmy-category-product-list {
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding-left: 0;
+                .rentmy-product-list {
+                    .rentmy-product {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// scrollbar css 
+.rentmy-main-wrapper {
+    .rentmy-scrollbar::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        background-color: #F5F5F5;
+    }
+    .rentmy-scrollbar::-webkit-scrollbar {
+        width: 6px;
+        background-color: #f2f3f8;
+    }
+    .rentmy-scrollbar::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+        background-color: #555;
+    }
+}
+
+// loading css
+.rentmy-main-wrapper {
+    .rentmy-loading {
+        width: 130px;
+        padding: 5px 10px;
+        background-color: #fff;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+        display: flex;
+        align-items: center;
+        border-radius: 2px;
+        z-index: 999999;
+    }
+    .rentmy-loading-text {
+        display: inline-block;
+        font-weight: 400;
+        color: #888;
+    }
+    .rentmy-loading-circle {
+        display: inline-block;
+        height: 0;
+        width: 0;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-right-color: #333;
+        border-radius: 22px;
+        -webkit-animation: rotate 1s infinite linear;
+        margin-left: 10px;
+    }
+}
+
+.rentmy-main-wrapper {
+    @-webkit-keyframes rotate {
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    input[type="date"] {
+        position: relative;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        color: transparent;
+        background: transparent;
+    }
+}
+
+// checkout error css 
+.rentmy-error {
+    padding-bottom: 15px;
+    li {
+        padding: 5px 0;
+        color: #F44336;
+        font-size: 15px;
+        font-weight: 500;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+// optional service page css
+.rentmy-optional-service-tablearea {
+    padding: 0;
+    .rentmy-ordrcomplete-optionalservice-table {
+        thead,
+        tbody {
+            border-left: none;
+            border-right: none;
+        }
+    }
+}
+
+// cartbar css
+.rentmy-alert-message {
+    position: fixed;
+    left: 15px;
+    bottom: 50px;
+    height: auto;
+    width: auto;
+    background: #fbfdfc;
+    overflow: hidden;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
+    border-radius: 5px;
+    transition: width 100ms ease-in;
+    transition: all 100ms ease-in;
+    color: #515151;
+    z-index: 99;
+    &:hover {
+        width: auto;
+    }
+    .rentmy-alert-success-message {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+    }
+    .rentmy-alert-error-message {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        color: #721c24;
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+    .rentmy-alert-message-icon::before,
+    .rentmy-alert-message-icon::after,
+    .rentmy-alert-message-icon {
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        color: #444;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 60px;
+        font-size: 25px;
+        font-weight: unset;
+    }
+    .rentmy-alert-message-text {
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 500;
+        ul {
+            li {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// alert message
+.rentmy-main-wrapper {
+    .rentmy-ordercomplete-success-message {
+        position: relative;
+        padding: .75rem 1.25rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        color: #155724;
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+        margin-bottom: 20px;
+    }
+}
+
+.rentmy-main-wrapper {
+    .rentmy-alert-message {
+        z-index: 99999;
+    }
+}
+
+.rentmy-main-wrapper {
+    .rentmy-hide {
+        display: none;
+    }
+    .rentmy-display-none {
+        display: none;
+    }
+}
+
+// contact page css
+.rentmy-contact-wrapper {
+    padding: 50px 0;
+    .rentmy-container {
+        .rentmy-row {
+            margin-left: -15px;
+            margin-right: -15px;
+            .rentmy-column-12 {
+                padding-left: 15px;
+                padding-right: 15px;
+                h5 {
+                    font-size: 35px;
+                    padding-bottom: 40px;
+                    position: relative;
+                }
+            }
+        }
+        .rentmy-row {
+            margin-left: -15px;
+            margin-right: -15px;
+            .rentmy-column-7 {
+                padding-left: 15px;
+                padding-right: 15px;
+                .rentmy-row {
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    .rentmy-column-12,
+                    .rentmy-column-6 {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        textarea {
+                            height: 150px;
+                            overflow: auto;
+                        }
+                    }
+                }
+            }
+            .rentmy-column-5 {
+                padding-left: 15px;
+                padding-right: 15px;
+                iframe {
+                    width: 100%;
+                    height: 300px;
+                    margin-top: 23px;
+                    border: 5px solid #f2f3f8;
+                }
+                .rentmy-content-text {
+                    padding-top: 20px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .rentmy-contact-wrapper {
+        padding: 50px 0;
+        .rentmy-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            .rentmy-row {
+                .rentmy-column-7 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .rentmy-column-5 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// About page css
+.rentmy-aboutus-wrapper {
+    padding: 50px 0;
+    .rentmy-container {
+        padding: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        .rentmy-row {
+            margin-left: -15px;
+            margin-right: -15px;
+            .rentmy-column-12 {
+                padding-left: 15px;
+                padding-right: 15px;
+                h5 {
+                    font-size: 35px;
+                    padding-bottom: 40px;
+                    position: relative;
+                }
+            }
+        }
+        .rentmy-row {
+            margin-left: -15px;
+            margin-right: -15px;
+            .rentmy-column-12 {
+                padding-left: 15px;
+                padding-right: 15px;
+                p {
+                    font-weight: 400;
+                    color: #666;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+// custome page css
+.rentmy-customepage-wrapper {
+    padding: 50px 0;
+    .rentmy-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        .rentmy-row {
+            margin-left: -15px;
+            margin-right: -15px;
+            .rentmy-column-12 {
+                padding-left: 15px;
+                padding-right: 15px;
+                h5 {
+                    font-size: 35px;
+                    padding-bottom: 40px;
+                    position: relative;
+                }
+            }
+        }
+        .rentmy-row {
+            margin-left: -15px;
+            margin-right: -15px;
+            .rentmy-column-12 {
+                padding-left: 15px;
+                padding-right: 15px;
+                p {
+                    font-weight: 400;
+                    color: #666;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+
+/*-- search css  --*/
+
+.rentmy-search-body {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    opacity: 9;
+    transition: all .75s ease;
+    margin-top: -515px;
+    z-index: 1;
+    border-bottom: 1px solid #eee;
+    &.rentmy-search-show {
+        margin-top: 0;
+    }
+    .rentmy-search-inner-body {
+        height: 100%;
+        .rentmy-search-closebar {
+            position: absolute;
+            color: #555;
+            top: 35px;
+            right: 15px;
+            i {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .rentmy-row {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            .rentmy-column-6 {
+                .rentmy-input-group {
+                    position: relative;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -ms-flex-align: stretch;
+                    align-items: stretch;
+                    width: 100%;
+                    input {
+                        position: relative;
+                        -ms-flex: 1 1 auto;
+                        flex: 1 1 auto;
+                        width: 1%;
+                        margin-bottom: 0;
+                        height: 50px;
+                        border-radius: 50px 0 0 50px;
+                        &:focus {
+                            box-shadow: none;
+                            border: 1px solid #444;
+                        }
+                    }
+                    .rentmy-input-group-append {
+                        display: flex;
+                        margin-left: -1px;
+                        button {
+                            position: relative;
+                            z-index: 2;
+                            height: 50px;
+                            width: 60px;
+                            background-color: #444;
+                            border-radius: 0px 50px 50px 0px;
+                            border-color: #444;
+                            color: #eee;
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// bounce home page css ============================================
+// =================================================================
+// header css
+.rentmy-header {
+    background-color: #fff;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+    border-bottom: 1px solid #f2f3f8;
+    .rentmy-top-header {
+        background-color: #fff;
+        width: 100%;
+        height: 45px;
+        border-bottom: 1px solid #f2f3f8;
+        .header-top-right {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: flex-end;
+            .shop-menu {
+                ul {
+                    li {
+                        margin-left: 20px;
+                        display: inline-block;
+                        a {
+                            transition: 0.3s;
+                            font-size: 15px;
+                            font-weight: 500;
+                            color: #555;
+                            &:hover {
+                                color: $themecolor;
+                            }
+                            i {
+                                font-size: 16px;
+                                padding-right: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rentmy-menu-header {
+        background-color: #fff;
+        width: 100%;
+        height: 90px;
+        border-bottom: 1px solid #f2f3f8;
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        z-index: 9999;
+        top: 45px;
+        position: fixed;
+        .rentmy-container {
+            .rentmy-row {
+                display: flex;
+                flex-wrap: wrap;
+                .rentmy-logo-area {
+                    height: 100%;
+                    .rentmy-logo-area-inner {
+                        display: table;
+                        table-layout: fixed;
+                        width: auto;
+                        height: 100%;
+                        .rentmy-logo-area-middle {
+                            display: table-cell;
+                            height: 70px;
+                            vertical-align: middle;
+                            transition: all 0.4s ease-in-out;
+                            a {
+                                img {
+                                    width: unset;
+                                    height: 70px;
+                                    transition: all 0.4s ease-in-out;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rentmy-menu {
+                    .rentmy-mobile-device {
+                        display: none;
+                    }
+                    .rentmy-nav-manu {
+                        display: inline-block;
+                        float: right;
+                        ul {
+                            li {
+                                display: inline-block;
+                                position: relative;
+                                a {
+                                    line-height: 90px;
+                                    padding: 0 20px;
+                                    display: block;
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    color: #444;
+                                    transition: all 0.4s ease-in-out;
+                                    i {
+                                        font-size: 17px;
+                                    }
+                                    .lni-chevron-down {
+                                        font-size: 9px;
+                                        margin-left: 3px;
+                                        font-weight: bold;
+                                    }
+                                    &:hover {
+                                        color: $themecolor;
+                                    }
+                                    &.rentmy-active-menu {
+                                        color: $themecolor;
+                                    }
+                                }
+                                &:last-child {
+                                    a {
+                                        padding-right: 0;
+                                    }
+                                }
+                                ul {
+                                    position: absolute;
+                                    min-width: 230px;
+                                    padding: 10px 0px;
+                                    background: #fff;
+                                    box-shadow: 0 3px 11px 0 rgba(0, 0, 0, .1);
+                                    transform: perspective(600px) rotateX(-90deg);
+                                    transform-origin: 0 0 0;
+                                    left: 0;
+                                    right: auto;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: .5s;
+                                    z-index: 99;
+                                    top: 100%;
+                                    text-align: left;
+                                    &:before {
+                                        content: "\f0d8";
+                                        font-family: FontAwesome;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        text-decoration: inherit;
+                                        color: #fff;
+                                        font-size: 18px;
+                                        padding-right: 0.5em;
+                                        position: absolute;
+                                        top: -12px;
+                                        right: 22px;
+                                    }
+                                    li {
+                                        float: unset;
+                                        width: 100%;
+                                        display: inline-block;
+                                        a {
+                                            display: block;
+                                            padding: 10px 20px;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            border-bottom: 1px solid #f2f3f8;
+                                            &:hover {
+                                                color: $themecolor;
+                                            }
+                                        }
+                                        &:last-child {
+                                            a {
+                                                border-bottom: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:hover ul {
+                                    visibility: visible;
+                                    opacity: 1;
+                                    transform: perspective(600px) rotateX(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // sharink css
+        &.shrink {
+            height: 80px;
+            z-index: 9999;
+            top: 0;
+            position: fixed;
+            background-color: #fff;
+            box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+            .rentmy-container {
+                .rentmy-row {
+                    .rentmy-logo-area {
+                        .rentmy-logo-area-inner {
+                            .rentmy-logo-area-middle {
+                                height: 60px;
+                                a {
+                                    img {
+                                        width: unset;
+                                        height: 60px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .rentmy-menu {
+                        .rentmy-nav-manu {
+                            ul {
+                                li {
+                                    a {
+                                        line-height: 80px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-header {
+        .rentmy-top-header {
+            display: none;
+            .header-top-right {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: flex-end;
+                .shop-menu {
+                    ul {
+                        li {
+                            margin-left: 20px;
+                            display: inline-block;
+                            a {
+                                transition: 0.3s;
+                                font-size: 15px;
+                                font-weight: 500;
+                                color: #555;
+                                &:hover {
+                                    color: $themecolor;
+                                }
+                                i {
+                                    font-size: 16px;
+                                    padding-right: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .rentmy-menu-header {
+            height: 80px;
+            top: 0;
+            .rentmy-container {
+                .rentmy-row {
+                    .rentmy-logo-area {
+                        .rentmy-logo-area-inner {
+                            .rentmy-logo-area-middle {
+                                height: 50px;
+                                img {
+                                    width: 130px !important;
+                                    max-width: 130px !important;
+                                    height: 50px !important;
+                                }
+                            }
+                        }
+                    }
+                    .rentmy-menu {
+                        position: relative;
+                        .rentmy-mobile-device {
+                            display: flex;
+                            padding-right: 10px;
+                            justify-content: flex-end;
+                            align-items: center;
+                            li {
+                                display: inline-block;
+                                position: relative;
+                                a {
+                                    line-height: 80px;
+                                    padding: 0 8px;
+                                    i {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        .rentmy-nav-manu {
+                            display: none;
+                            position: fixed;
+                            left: 0;
+                            width: 100%;
+                            background: #fff;
+                            box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+                            top: 80px;
+                            z-index: 9;
+                            ul {
+                                padding: 15px 0;
+                                li {
+                                    display: inline-block;
+                                    margin: 0;
+                                    width: 100%;
+                                    &.rm-desktop-search-bar,
+                                    &.rm-desktop-sidebar-menu {
+                                        display: none;
+                                    }
+                                    a {
+                                        line-height: 37px;
+                                        padding: 0 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // sharink css
+            &.shrink {
+                .rentmy-container {
+                    .rentmy-row {
+                        .rentmy-logo-area {
+                            .rentmy-logo-area-inner {
+                                .rentmy-logo-area-middle {
+                                    a {
+                                        img {
+                                            width: unset;
+                                            height: 60px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .rentmy-menu {
+                            .rentmy-nav-manu {
+                                ul {
+                                    li {
+                                        a {
+                                            line-height: 37px;
+                                            padding: 0 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*-- right toggle bar --*/
+
+.rentmy-search-body {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+    box-shadow: 0 0 30px 0 rgba(51, 77, 136, 0.08);
+    top: 135px;
+    z-index: 9;
+    .rentmy-search-inner-body {
+        height: 100%;
+        .rentmy-search-closebar {
+            position: absolute;
+            color: #555;
+            top: 35px;
+            right: 15px;
+            i {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .rentmy-row {
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            .rentmy-column-6 {
+                .rentmy-input-group {
+                    position: relative;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    -ms-flex-align: stretch;
+                    align-items: stretch;
+                    width: 100%;
+                    input {
+                        position: relative;
+                        -ms-flex: 1 1 auto;
+                        flex: 1 1 auto;
+                        width: 1%;
+                        margin-bottom: 0;
+                        height: 50px;
+                        border-radius: 4px 0 0 4px;
+                        border: 1px solid $themecolor;
+                        &:focus {
+                            box-shadow: none;
+                            border: 1px solid $themecolor;
+                        }
+                    }
+                    .rentmy-input-group-append {
+                        display: flex;
+                        margin-left: -1px;
+                        button {
+                            position: relative;
+                            z-index: 2;
+                            height: 50px;
+                            width: 80px;
+                            background-color: $themecolor;
+                            border-radius: 0px 4px 0 4px;
+                            border-color: $themecolor;
+                            color: #eee;
+                            cursor: pointer;
+                            i {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-search-body {
+        top: 80px;
+        height: 80px;
+        .rentmy-search-inner-body {
+            .rentmy-search-closebar {
+                i {
+                    font-size: 18px;
+                }
+            }
+            .rentmy-row {
+                .rentmy-column-6 {
+                    flex: 0 0 80%;
+                    max-width: 80%;
+                    .rentmy-input-group {
+                        input {
+                            height: 45px;
+                        }
+                        .rentmy-input-group-append {
+                            button {
+                                width: 50px;
+                                height: 45px;
+                                cursor: pointer;
+                                i {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// right sidebar css
+.rentmy-rightsidebar-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+    z-index: 9999;
+    &.is-open {
+        opacity: unset;
+        pointer-events: unset;
+        .rentmy-rightsidebar-content {
+            transform: translate(0px, 0px);
+        }
+    }
+    .rentmy-rightsidebar-content {
+        transform: translate(0px, -50px);
+        transition: all 0.7s cubic-bezier(0.59, -0.17, 0.3, 1.67);
+        position: fixed;
+        padding: 0;
+        width: 340px;
+        height: 100vh;
+        background-color: #24262b;
+        overflow: hidden;
+        -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.4);
+        right: 0;
+        bottom: 0;
+        z-index: 9999;
+        border-radius: 0;
+        .rentmy-rightsidebar-close {
+            position: absolute;
+            padding: 10px 15px;
+            font-size: 15px;
+            text-align: center;
+            background: transparent;
+            color: #fff;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            z-index: 9;
+            i {
+                font-size: 25px;
+            }
+        }
+        .rentmy-rightsidebar-body {
+            padding: 50px 20px 20px;
+            h5 {
+                margin-bottom: 15px;
+                color: #eee;
+                font-weight: 500;
+                border-left: 3px solid #eee;
+                padding-left: 10px;
+            }
+            .rm-rightsidebar-des {
+                margin-bottom: 20px;
+                p {
+                    color: #ddd;
+                }
+            }
+            .rm-rightsidebar-contact,
+            .rm-rightsidebar-linkpage {
+                margin-bottom: 25px;
+                ul {
+                    li {
+                        display: inline-block;
+                        padding: 6px 0;
+                        width: 100%;
+                        color: #ddd;
+                        a {
+                            display: block;
+                            color: #ddd;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        i {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .rm-rightsidebar-social {
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 10px;
+                        a {
+                            background-color: #31343c;
+                            width: 35px;
+                            height: 35px;
+                            display: block;
+                            color: #ddd;
+                            text-align: center;
+                            line-height: 35px;
+                            border-radius: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rentmy-rightsidebar-overlay {
+        .rentmy-rightsidebar-content {
+            width: 320px;
+        }
+    }
+}
+
+// slider css
+.rentmy-slider-section {
+    background-color: #fbfbfb;
+    margin-top: 0;
+    .rentmy-owl-carousel {
+        .owl-item {
+            &:nth-child(1) {
+                .rentmy-owl-carousel-item {
+                    .rentmy-owl-intro-slide {
+                        background-image: url("../img/slider.PNG");
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .rentmy-owl-carousel-item {
+                    .rentmy-owl-intro-slide {
+                        background-image: url("../img/slider2.PNG");
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .rentmy-owl-carousel-item {
+                    .rentmy-owl-intro-slide {
+                        background-image: url("../img/slider3.PNG");
+                    }
+                }
+            }
+            .rentmy-owl-carousel-item {
+                .rentmy-owl-intro-slide {
+                    background-color: #fafafa;
+                    height: 600px;
+                    display: flex;
+                    align-items: center;
+                    background-size: cover;
+                    background-position: 60% center;
+                    .rentmy-sl-subtitle {
+                        color: $themecolor;
+                        font-weight: 500;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        padding-bottom: 20px;
+                    }
+                    .rentmy-sl-maintitle {
+                        color: #fff;
+                        padding-bottom: 30px;
+                        line-height: 55px;
+                    }
+                    .rentmy-sl-short-des {
+                        color: #eee;
+                        font-weight: 400;
+                        padding-bottom: 25px;
+                        font-size: 16px;
+                    }
+                    .rentmy-sl-button {
+                        padding: 17px 30px;
+                        background-color: $themecolor;
+                        i {
+                            margin-left: 5px;
+                            font-size: 10px;
+                        }
+                    }
+                    img {
+                        width: 90%;
+                        float: right;
+                    }
+                }
+            }
+        }
+        .owl-nav.disabled {
+            display: block;
+            pointer-events: unset;
+            margin-top: 0;
+            .owl-next,
+            .owl-prev {
+                position: absolute;
+                top: 40%;
+                span {
+                    font-size: 50px;
+                    color: #fff;
+                }
+                &:hover {
+                    background-color: transparent;
+                    color: $themecolor;
+                    span {
+                        color: $themecolor;
+                    }
+                }
+            }
+            .owl-prev {
+                left: 5%;
+            }
+            .owl-next {
+                right: 5%;
+            }
+        }
+        .owl-dots {
+            margin-top: 10px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 30px;
+            .owl-dot {
+                span {
+                    border-radius: 0;
+                }
+                &:hover,
+                &.active {
+                    span {
+                        background-color: $themecolor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1599px) {
+    .rentmy-slider-section {
+        margin-top: 0;
+        .rentmy-owl-carousel {
+            .owl-nav.disabled {
+                .owl-prev {
+                    left: 20px;
+                }
+                .owl-next {
+                    right: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    .rentmy-slider-section {
+        margin-top: 0;
+        .rentmy-owl-carousel {
+            .owl-item {
+                .rentmy-owl-carousel-item {
+                    .rentmy-owl-intro-slide {
+                        height: 520px;
+                        .rentmy-sl-subtitle {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .owl-nav.disabled {
+                .owl-prev {
+                    left: 15px;
+                }
+                .owl-next {
+                    right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .rentmy-slider-section {
+        margin-top: 0;
+        .rentmy-owl-carousel {
+            .owl-item {
+                .rentmy-owl-carousel-item {
+                    .rentmy-owl-intro-slide {
+                        height: 450px;
+                        .rentmy-sl-subtitle {
+                            font-size: 15px;
+                        }
+                        .rentmy-sl-button {
+                            padding: 15px 30px;
+                        }
+                    }
+                }
+            }
+            .owl-nav.disabled {
+                .owl-prev {
+                    left: 15px;
+                }
+                .owl-next {
+                    right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .rentmy-slider-section {
+        .rentmy-owl-carousel {
+            .owl-item {
+                .rentmy-owl-carousel-item {
+                    .rentmy-owl-intro-slide {
+                        height: auto;
+                        padding: 50px 0;
+                        .rentmy-column-6 {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            text-align: center;
+                        }
+                        .rentmy-sl-subtitle {
+                            font-size: 15px;
+                        }
+                        .rentmy-sl-button {
+                            padding: 13px 25px;
+                        }
+                        img {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+            .owl-nav.disabled {
+                .owl-prev {
+                    left: 15px;
+                }
+                .owl-next {
+                    right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:575px) {
+    .rentmy-slider-section {
+        .rentmy-owl-carousel {
+            .owl-item {
+                .rentmy-owl-carousel-item {
+                    .rentmy-owl-intro-slide {
+                        .rentmy-sl-subtitle {
+                            font-size: 15px;
+                        }
+                        .rentmy-sl-button {
+                            padding: 13px 25px;
+                        }
+                        img {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .owl-nav.disabled {
+                .owl-prev {
+                    left: 10px;
+                }
+                .owl-next {
+                    right: 10px;
+                }
+            }
+            .owl-dots {
+                display: none;
+            }
+        }
+    }
+}
+
+// homepage datetime section css
+.rentmy-datetime-section {
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    margin-top: -75px;
+    .rentmy-datetime-body {
+        padding: 40px 0;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+        .rentmy-sortdatetime {
+            padding-bottom: 0;
+            .rentmy-product-datetime {
+                flex: 0 0 100%;
+                max-width: 100%;
+                .setCrtDateTime {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .rentmy-product-datetime-inner {
+                        margin-right: 10px;
+                        label {
+                            font-size: 16px;
+                            text-transform: uppercase;
+                        }
+                        .rentmy-datetime-input {
+                            input {
+                                width: 220px;
+                                height: 50px;
+                                margin-right: 10px;
+                            }
+                            select {
+                                width: 220px;
+                                height: 50px;
+                            }
+                        }
+                    }
+                    .rentmy-product-datetime-btn {
+                        .rentmy-datetimeapply-btn {
+                            padding: 10px 35px;
+                            height: 50px;
+                            margin-top: 25px;
+                            background-color: $themecolor;
+                            color: #fff;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .rentmy-datetime-section {
+        .rentmy-datetime-body {
+            .rentmy-sortdatetime {
+                .rentmy-product-datetime {
+                    .setCrtDateTime {
+                        .rentmy-product-datetime-inner {
+                            label {
+                                font-size: 16px;
+                                text-transform: uppercase;
+                            }
+                            .rentmy-datetime-input {
+                                input {
+                                    width: 180px;
+                                    margin-right: 10px;
+                                }
+                                select {
+                                    width: 180px;
+                                }
+                            }
+                        }
+                        .rentmy-product-datetime-btn {
+                            .rentmy-datetimeapply-btn {
+                                padding: 10px 35px;
+                                height: 50px;
+                                margin-top: 25px;
+                                background-color: $themecolor;
+                                color: #fff;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-datetime-section {
+        .rentmy-datetime-body {
+            padding: 30px;
+            .rentmy-sortdatetime {
+                .rentmy-product-datetime {
+                    .setCrtDateTime {
+                        flex-wrap: wrap;
+                        .rentmy-product-datetime-inner {
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            margin-right: 0;
+                            label {}
+                            .rentmy-datetime-input {
+                                input {
+                                    width: 150px;
+                                }
+                                select {
+                                    width: 150px;
+                                }
+                            }
+                        }
+                        .rentmy-product-datetime-btn {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            margin-bottom: 0;
+                            .rentmy-datetimeapply-btn {
+                                padding: 10px 20px;
+                                float: right;
+                                margin-top: 0;
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rentmy-datetime-section {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        .rentmy-datetime-body {
+            padding: 15px;
+            .rentmy-sortdatetime {
+                .rentmy-product-datetime {
+                    .setCrtDateTime {
+                        .rentmy-product-datetime-inner {
+                            flex: 0 0 100%;
+                            max-width: 100%;
+                            label {}
+                            .rentmy-datetime-input {
+                                input {
+                                    width: 50%;
+                                }
+                                select {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                        .rentmy-product-datetime-btn {
+                            .rentmy-datetimeapply-btn {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// homepage grid section css
+.rentmy-grid-section {
+    padding: 70px 0 50px;
+    .rentmy-container {
+        .rentmy-row {
+            .rentmy-grid-box {
+                position: relative;
+                display: block;
+                position: relative;
+                margin-bottom: 20px;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 30px;
+                    right: 30px;
+                    top: 30px;
+                    bottom: 30px;
+                    border: transparent;
+                    transition: all .45s ease;
+                    pointer-events: none;
+                }
+                &:after {
+                    left: 0px;
+                    right: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    visibility: hidden;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    // opacity: 0;
+                    visibility: visible;
+                }
+                &:hover {
+                    &:after {
+                        left: 10px;
+                        right: 10px;
+                        top: 10px;
+                        bottom: 10px;
+                        border: 5px solid rgba(0, 0, 0, 0.3);
+                        background-color: rgba(0, 0, 0, 0.6);
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                a {
+                    position: relative;
+                    display: block;
+                    outline: none !important;
+                    .rentmy-grid-overlay {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                    }
+                    .rentmy-grid-image {
+                        color: transparent;
+                        display: inline-block;
+                        height: 305px;
+                        width: 100px;
+                        display: inline !important;
+                        z-index: 2;
+                        position: relative;
+                        img {
+                            display: block;
+                            max-width: none;
+                            width: 100%;
+                            height: auto;
+                            object-fit: cover;
+                            width: 100%;
+                        }
+                    }
+                }
+                .rentmy-grid-content {
+                    width: 60%;
+                    display: inline-block;
+                    position: absolute;
+                    padding-top: .4rem;
+                    left: 2rem;
+                    top: 50%;
+                    z-index: 2;
+                    transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    left: 0;
+                    padding-top: 0;
+                    padding-left: 25px;
+                    a {
+                        color: inherit;
+                    }
+                    .rentmy-grid-title {
+                        color: #fff;
+                        font-size: 28px;
+                        line-height: 28px;
+                        letter-spacing: -.01em;
+                        margin-bottom: 15px;
+                        font-weight: 400;
+                    }
+                    .rentmy-grid-short-des {
+                        color: #eee;
+                        font-weight: 400;
+                        font-size: 16px;
+                        letter-spacing: -.01em;
+                        margin-bottom: 15px;
+                    }
+                    .rentmy-grid-link {
+                        font-size: 16px;
+                        position: relative;
+                        font-weight: 400;
+                        color: #fff;
+                        i {
+                            margin-left: 5px;
+                            font-size: 9px;
+                            font-weight: bold;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            right: -1.8rem;
+                            bottom: -.2rem;
+                            height: .1rem;
+                            background-color: #c66;
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-grid-section {
+        padding: 20px 0 20px;
+        .rentmy-container {
+            .rentmy-row {
+                .rentmy-grid-box {
+                    .rentmy-grid-content {
+                        width: 80%;
+                        .rentmy-grid-title {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rentmy-grid-section {
+        .rentmy-container {
+            .rentmy-row {
+                .rentmy-column-6 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .rentmy-grid-box {
+                    .rentmy-grid-content {
+                        width: 80%;
+                        .rentmy-grid-title {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// homepage offer css
+.rentmy-offer-section {
+    position: relative;
+    background: #FBFBFB;
+    overflow: hidden;
+    .rentmy-container {
+        .rentmy-row {
+            .rentmy-column-6 {
+                .rentmy-offer-content {
+                    h6 {
+                        padding-bottom: 25px;
+                        color: #777;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                    h1 {
+                        padding-bottom: 25px;
+                    }
+                    p {
+                        padding-bottom: 25px;
+                    }
+                }
+                .shop-offer {
+                    text-align: right;
+                    img {
+                        width: 500px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rentmy-offer-section {
+        padding: 30px 0;
+        .rentmy-container {
+            .rentmy-row {
+                .rentmy-column-6 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    .rentmy-offer-content {
+                        text-align: center;
+                        h6 {
+                            padding-bottom: 15px;
+                            color: #777;
+                            font-weight: 500;
+                        }
+                        h1 {
+                            padding-bottom: 15px;
+                        }
+                        p {
+                            padding-bottom: 25px;
+                        }
+                    }
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// homepage featured product css
+.rentmy-featured-product-section {
+    padding: 80px 0;
+    .rentmy-container {
+        .rentmy-row {
+            .rentmy-column-12 {
+                .owl-stage-outer {
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+                .rentmy-product {
+                    position: relative;
+                    .rentmy-product-inner {
+                        margin-bottom: 30px;
+                        cursor: pointer;
+                        box-shadow: 0px 15px 60px 0px rgba(216, 216, 216, 0.4);
+                        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1);
+                        box-shadow: 0px 0px 12px #eee;
+                        transition: all .5s;
+                        &:hover {
+                            box-shadow: none;
+                        }
+                        .rentmy-product-image {
+                            height: 230px;
+                            padding-top: 15px;
+                            overflow: hidden;
+                            position: relative;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                transition: all ease-in-out .5s;
+                                -webkit-transition: all ease-in-out .5s;
+                                -o-transition: all ease-in-out .5s;
+                                -moz-transition: all ease-in-out .5s;
+                                padding-left: 15px;
+                                padding-right: 15px;
+                            }
+                            .rentmy-product-overlow {
+                                position: absolute;
+                                background-color: rgba(255, 255, 255, .5);
+                                z-index: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+                                cursor: pointer;
+                                text-align: center;
+                                transition: all ease-in-out .5s;
+                                -webkit-transition: all ease-in-out .5s;
+                                -o-transition: all ease-in-out .5s;
+                                -moz-transition: all ease-in-out .5s;
+                                .rentmy-addcart-btn,
+                                .rentmy-cart-btn {
+                                    margin: 0 auto;
+                                    width: 45px;
+                                    height: 45px;
+                                    border-radius: 100px;
+                                    margin-top: 35%;
+                                    padding: 0;
+                                    text-align: center;
+                                    line-height: 45px;
+                                    background-color: $themecolor;
+                                    color: #fff;
+                                    border: none;
+                                    margin-left: 5px;
+                                    margin-right: 5px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        &:hover {
+                            .rentmy-product-image {
+                                img {
+                                    transform: scale(1.1);
+                                    -webkit-transform: scale(1.1);
+                                    -moz-transform: scale(1.1);
+                                }
+                                .rentmy-product-overlow {
+                                    opacity: 6;
+                                    top: 0;
+                                }
+                            }
+                        }
+                        .rentmy-product-body {
+                            position: relative;
+                            padding: 15px;
+                            min-height: 77px;
+                            .rentmy-product-title {
+                                font-size: 15px;
+                                padding-bottom: 8px;
+                            }
+                            .rentmy-product-price {
+                                font-size: 13px;
+                                font-weight: 400;
+                            }
+                            .rentmy-cart-btn {
+                                position: absolute;
+                                top: 18px;
+                                right: 15px;
+                                display: block !important;
+                                border-radius: 3px;
+                                float: right;
+                                padding: 8px 10px;
+                                transition: all 50ms ease-in;
+                                cursor: pointer;
+                                font-size: 14pt;
+                                color: #fff;
+                                background-color: #444;
+                                &:hover {
+                                    background-color: #333;
+                                }
+                            }
+                        }
+                    }
+                }
+                .owl-nav {
+                    display: block;
+                    .owl-next,
+                    .owl-prev {
+                        position: absolute;
+                        top: 40%;
+                        opacity: unset;
+                        span {
+                            font-size: 50px;
+                        }
+                        &:hover {
+                            background-color: transparent;
+                            color: $themecolor;
+                            span {
+                                color: $themecolor;
+                            }
+                        }
+                    }
+                    .owl-prev {
+                        left: -50px;
+                    }
+                    .owl-next {
+                        right: -50px;
+                    }
+                }
+                .owl-dots {
+                    margin-top: 10px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 30px;
+                    .owl-dot {
+                        span {
+                            border-radius: 0;
+                        }
+                        &:hover,
+                        &.active {
+                            span {
+                                background-color: $themecolor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rentmy-featured-product-section {
+        padding: 50px 0;
+        .rentmy-container {
+            .rentmy-row {
+                .rentmy-column-12 {
+                    .owl-nav {
+                        .owl-prev {
+                            left: 15px;
+                        }
+                        .owl-next {
+                            right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// newslatlter css
+.rentmy-newslatter-section {
+    background-color: #fbfbfb;
+    padding: 50px 0;
+    .rentmy-container {
+        .rentmy-row {
+            .rentmy-newslatter-title {
+                p {
+                    font-weight: 400;
+                    color: #777;
+                }
+            }
+            .rentmy-newsletter-form {
+                .rentmy-newsletter-form-inner {
+                    .rentmy-flex {
+                        input {
+                            height: 48px;
+                            border-radius: 3px 0 0 3px;
+                            border: 1px solid $themecolor;
+                        }
+                        .rentmy-button {
+                            height: 48px;
+                            border-radius: 0 3px 3px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .rentmy-newslatter-section {
+        padding: 30px 0;
+        .rentmy-container {
+            .rentmy-row {
+                .rentmy-column-6 {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .rentmy-newslatter-title {
+                    padding-bottom: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// footer css
+.rentmy-footer {
+    background-color: #fff;
+    .rentmy-top-footer {
+        padding: 50px 0;
+        .rentmy-container {
+            .rentmy-row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .rentmy-footer-contact {
+                    flex: 0 0 30%;
+                    max-width: 30%;
+                }
+                .rentmy-footer-links {
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                }
+                .rentmy-footer-newslatter {
+                    flex: 0 0 30%;
+                    max-width: 30%;
+                }
+                .rentmy-social-links,
+                .rentmy-footer-contact,
+                .rentmy-footer-links,
+                .rentmy-footer-newslatter {
+                    h4 {
+                        font-size: 16px;
+                        margin-bottom: 15px;
+                        line-height: 18px;
+                        text-transform: uppercase;
+                    }
+                }
+                .rentmy-footer-contact {
+                    ul {
+                        li {
+                            color: #777;
+                            font-weight: 400;
+                            margin-top: 8px;
+                            font-size: 15px;
+                            a {
+                                color: #777;
+                            }
+                            i {
+                                width: 35px;
+                                height: 35px;
+                                text-align: center;
+                                line-height: 35px;
+                                font-size: 12px;
+                                margin-right: 8px;
+                                border-radius: 50px;
+                                color: #fff;
+                                background-color: $themecolor;
+                                &:hover {
+                                    background-color: $themehovercolor;
+                                }
+                            }
+                        }
+                    }
+                }
+                .rentmy-social-links,
+                .rentmy-footer-links {
+                    ul {
+                        li {
+                            padding: 5px 0;
+                            font-size: 15px;
+                            a {
+                                color: #777;
+                                font-weight: 400;
+                                font-size: 15px;
+                                letter-spacing: 1px;
+                                &:hover {
+                                    color: $themecolor;
+                                }
+                                i {
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rentmy-bottom-footer {
+        background-color: #fbfbfb;
+        .rentmy-container {
+            padding: 20px 0;
+            .rentmy-row {
+                display: flex;
+                flex-wrap: wrap;
+                .rentmy-bottom-footer-content {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    p {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        color: #777;
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 400;
+                        a {
+                            color: $themecolor;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rentmy-footer {
+        .rentmy-top-footer {
+            .rentmy-container {
+                padding: 0 15px;
+                .rentmy-row {
+                    .rentmy-footer-contact {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .rentmy-footer-links {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .rentmy-footer-newslatter {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    .rentmy-footer-contact,
+                    .rentmy-footer-links,
+                    .rentmy-footer-newslatter {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rentmy-footer {
+        .rentmy-top-footer {
+            .rentmy-container {
+                padding: 0 15px;
+                .rentmy-row {
+                    .rentmy-social-links,
+                    .rentmy-footer-contact,
+                    .rentmy-footer-links,
+                    .rentmy-footer-newslatter {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
